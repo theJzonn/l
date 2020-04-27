@@ -41,5 +41,6 @@ void			*ft_memmove(void *dst, const void *src, size_t len);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strnstr(const char *s1, const char *s2, unsigned int len);
 char			*ft_strrchr(const char *str, int c);
+char			*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
