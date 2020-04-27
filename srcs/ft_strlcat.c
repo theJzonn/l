@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jricafor <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/17 19:56:37 by jricafor          #+#    #+#             */
-/*   Updated: 2020/02/25 14:56:19 by jricafor         ###   ########.fr       */
+/*   Created: 2020/04/27 17:08:41 by jricafor          #+#    #+#             */
+/*   Updated: 2020/04/27 17:08:45 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "../includes/libft.h"
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)

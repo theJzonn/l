@@ -1,4 +1,16 @@
-void *ft_memcpy(void *dest, const void *src, unsigned int n)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/04/27 16:45:58 by jricafor          #+#    #+#             */
+/*   Updated: 2020/04/27 16:46:21 by jricafor         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+void	*ft_memcpy(void *dest, const void *src, unsigned int n)
 {
 	char	*s1;
 	char	*s2;
