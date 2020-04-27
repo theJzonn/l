@@ -1,26 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/27 16:42:44 by jricafor          #+#    #+#             */
-/*   Updated: 2020/04/27 16:43:15 by jricafor         ###   ########.fr       */
+/*   Created: 2020/04/27 17:10:31 by jricafor          #+#    #+#             */
+/*   Updated: 2020/04/27 17:10:36 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "./libft.h"
 
-void	*ft_bzero(void *s, size_t n)
+char	*ft_strdup(char *src)
 {
-	size_t	i;
+	int		i;
+	int		size;
+	char	*str;
 
 	i = 0;
-	while (i < n)
+	while (src[i] != '\0')
+		i++;
+	size = i;
+	if (!(str = malloc(sizeof(*str) * (size + 1))))
+		return (NULL);
+	i = 0;
+	while (i < size)
 	{
-		((unsigned char *)s)[i] = '\0';
+		str[i] = src[i];
 		i++;
 	}
-	return (s);
+	str[i] = '\0';
+	return (str);
 }

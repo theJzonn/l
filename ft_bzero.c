@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/27 17:01:37 by jricafor          #+#    #+#             */
-/*   Updated: 2020/04/27 17:01:44 by jricafor         ###   ########.fr       */
+/*   Created: 2020/04/27 16:42:44 by jricafor          #+#    #+#             */
+/*   Updated: 2020/04/27 16:43:15 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "./libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+void	*ft_bzero(void *s, size_t n)
 {
-	int		i;
+	size_t	i;
 
-	i = ft_strlen(str);
-	while (str[i] != c)
+	i = 0;
+	while (i < n)
 	{
-		if (i == 0)
-			return (0);
-		i--;
+		((unsigned char *)s)[i] = '\0';
+		i++;
 	}
-	return ((char*)str + i);
+	return (s);
 }
