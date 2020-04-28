@@ -14,17 +14,14 @@
 
 char	*ft_strdup(char *src)
 {
-	int		i;
-	int		size;
+	unsigned int		i;
+	size_t		size;
 	char	*str;
 
 	i = 0;
-	while (src[i] != '\0')
-		i++;
-	size = i;
+	size = ft_strlen(src);
 	if (!(str = malloc(sizeof(*str) * (size + 1))))
 		return (NULL);
-	i = 0;
 	while (i < size)
 	{
 		str[i] = src[i];

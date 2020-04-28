@@ -36,7 +36,9 @@ SRCS	=	ft_atoi.c \
 				ft_strchr.c \
 				ft_strnstr.c \
 				ft_strrchr.c \
-				ft_substr.c
+				ft_substr.c \
+				ft_strjoin.c \
+				ft_strtrim.c
 
 HEADER	=	./
 

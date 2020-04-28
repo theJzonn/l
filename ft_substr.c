@@ -14,10 +14,10 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*str;
+	char	*res;
 	size_t	res_size;
 
-	str = NULL;
+	res = NULL;
 	if (s != NULL)
 	{
 		res_size = ft_strlen(s);
@@ -27,12 +27,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 			start = (unsigned int)res_size;
 		if (start + len > res_size)
 			len = res_size - start;
-		str = (char *)malloc(sizeof(char) * (len + 1));
-		if (str != NULL)
+		res = (char *)malloc(sizeof(char) * (len + 1));
+		if (res != NULL)
 		{
-			ft_memmove(str, s + start, len);
-			str[len] = '\0';
+			ft_memmove(res, s + start, len);
+			res[len] = '\0';
 		}
 	}
-	return (str);
+	return (res);
 }
