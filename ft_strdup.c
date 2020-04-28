@@ -6,7 +6,7 @@
 /*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/27 17:10:31 by jricafor          #+#    #+#             */
-/*   Updated: 2020/04/27 17:10:36 by jricafor         ###   ########.fr       */
+/*   Updated: 2020/04/28 21:22:02 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strdup(char *src)
 {
-	unsigned int		i;
-	size_t		size;
-	char	*str;
+	unsigned int	i;
+	size_t			size;
+	char			*str;
 
 	i = 0;
 	size = ft_strlen(src);
