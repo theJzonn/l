@@ -6,7 +6,7 @@
 /*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/27 17:08:41 by jricafor          #+#    #+#             */
-/*   Updated: 2020/04/27 17:08:45 by jricafor         ###   ########.fr       */
+/*   Updated: 2020/04/28 21:22:57 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 size_t	ft_strlcat(char *dest, char *src, size_t size)
 {
-	unsigned int i;
-	size_t dest_s;
-	size_t src_s;
+	unsigned int	i;
+	size_t			dest_s;
+	size_t			src_s;
 
 	i = 0;
 	dest_s = ft_strlen(dest);
