@@ -6,7 +6,7 @@
 /*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/27 22:56:14 by jricafor          #+#    #+#             */
-/*   Updated: 2020/04/27 22:56:15 by jricafor         ###   ########.fr       */
+/*   Updated: 2020/04/30 15:27:06 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_putnbr_fd(int n, int fd)
 		{
 			ft_putchar_fd('-', fd);
 			n = -n;
-		}	
+		}
 		if (n >= 10)
 		{
 			ft_putnbr_fd(n / 10, fd);
