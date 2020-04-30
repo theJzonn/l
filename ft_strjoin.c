@@ -6,7 +6,7 @@
 /*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/27 22:52:31 by jricafor          #+#    #+#             */
-/*   Updated: 2020/04/30 15:25:38 by jricafor         ###   ########.fr       */
+/*   Updated: 2020/04/30 17:35:27 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	unsigned	int	i;
-	unsigned	int	j;
-	char			*res;
+	unsigned	int		i;
+	unsigned	int		j;
+	char				*res;
 
 	if (!s1 || !s2)
 		return (NULL);
@@ -35,5 +35,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		*(res + i++) = *(s2 + j);
 		j++;
 	}
+	res[i] = '\0';
 	return (res);
 }

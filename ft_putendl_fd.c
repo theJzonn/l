@@ -6,7 +6,7 @@
 /*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/27 22:55:45 by jricafor          #+#    #+#             */
-/*   Updated: 2020/04/27 22:55:48 by jricafor         ###   ########.fr       */
+/*   Updated: 2020/04/30 17:28:09 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,9 @@
 
 void	ft_putendl_fd(char const *s, int fd)
 {
-	ft_putstr_fd(ft_strjoin(s, "\n"), fd);
+	if (s)
+	{
+		ft_putstr_fd(s, fd);
+		write(fd, "\n", 1);
+	}
 }
