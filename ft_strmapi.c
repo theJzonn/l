@@ -6,7 +6,7 @@
 /*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/27 22:54:14 by jricafor          #+#    #+#             */
-/*   Updated: 2020/04/27 22:54:16 by jricafor         ###   ########.fr       */
+/*   Updated: 2020/05/01 20:11:12 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = -1;
 	while (*(s + ++i))
 		*(str + i) = f(i, *(s + i));
+	*(str + i) = '\0';
 	return (str);
 }

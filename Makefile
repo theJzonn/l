@@ -6,7 +6,7 @@
 #    By: jricafor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/25 12:22:33 by jricafor          #+#    #+#              #
-#    Updated: 2020/05/01 19:27:02 by jricafor         ###   ########.fr        #
+#    Updated: 2020/05/01 20:03:09 by jricafor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,16 +45,14 @@ SRCS	=	ft_memset.c \
 				ft_putchar_fd.c \
 				ft_putstr_fd.c \
 				ft_putendl_fd.c \
-				ft_putnbr_fd.c
-
-SRCS_B	=		ft_lstnew.c \
+				ft_putnbr_fd.c \
+				\
+				ft_lstnew.c \
 					ft_lstadd_front.c
 
 HEADER	=	./
 
 OBJS	=	$(SRCS:.c=.o)
-
-OBJS_B	=	$(SRCS_B:.c=.o)
 
 CC 		=	gcc
 
@@ -69,10 +67,6 @@ all:		$(NAME)
 
 $(NAME):	$(OBJS)
 			ar rc $(NAME) $(OBJS)
-			ranlib $(NAME)
-
-bonus:		$(OBJS_B)
-			ar rc $(NAME) $(OBJS_B)
 			ranlib $(NAME)
 
 clean:

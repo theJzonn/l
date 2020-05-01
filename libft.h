@@ -6,7 +6,7 @@
 /*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/27 17:22:58 by jricafor          #+#    #+#             */
-/*   Updated: 2020/05/01 18:58:12 by jricafor         ###   ########.fr       */
+/*   Updated: 2020/05/01 20:07:11 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,10 @@ void			ft_putnbr_fd(int n, int fd);
 typedef struct	s_list
 {
 	void			*content;
-	struct t_list	*next;
+	struct s_list	*next;
 }				t_list;
 
 t_list			*ft_lstnew(void*content);
+void			ft_lstadd_front(t_list **alst, t_list *new);
 
 #endif

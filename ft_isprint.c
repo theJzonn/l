@@ -6,11 +6,11 @@
 /*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/27 16:58:21 by jricafor          #+#    #+#             */
-/*   Updated: 2020/04/27 16:58:26 by jricafor         ###   ########.fr       */
+/*   Updated: 2020/05/01 19:57:18 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isprint(char c)
+int		ft_isprint(int c)
 {
 	if (c < ' ' || c > '~')
 		return (0);

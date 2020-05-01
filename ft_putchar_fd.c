@@ -6,7 +6,7 @@
 /*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/27 22:54:39 by jricafor          #+#    #+#             */
-/*   Updated: 2020/04/27 22:54:41 by jricafor         ###   ########.fr       */
+/*   Updated: 2020/05/01 20:14:53 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, 1);
+	if (fd >= 0)
+		write(fd, &c, 1);
 }
