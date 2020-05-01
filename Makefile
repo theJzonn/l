@@ -6,7 +6,7 @@
 #    By: jricafor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/25 12:22:33 by jricafor          #+#    #+#              #
-#    Updated: 2020/05/01 22:36:53 by jricafor         ###   ########.fr        #
+#    Updated: 2020/05/01 22:51:24 by jricafor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,9 @@ SRCS	=	ft_memset.c \
 					ft_lstlast.c \
 					ft_lstadd_back.c \
 					ft_lstdelone.c \
-					ft_lstclear.c
+					ft_lstclear.c \
+					ft_lstiter.c \
+					ft_lstmap.c
 
 HEADER	=	./
 
