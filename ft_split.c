@@ -6,7 +6,7 @@
 /*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/27 22:53:16 by jricafor          #+#    #+#             */
-/*   Updated: 2020/04/27 22:53:18 by jricafor         ###   ########.fr       */
+/*   Updated: 2020/05/01 18:36:11 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,8 @@ char			**ft_split(char const *s, char c)
 	while (i < ft_countwords(s, c))
 	{
 		k = 0;
-		if (!(tab[i] = (char *)malloc(sizeof(char *) * get_word_len(&s[j], c) + 1)))
+		if (!(tab[i] = (char *)malloc(sizeof(char *)
+				* get_word_len(&s[j], c) + 1)))
 			tab[i] = NULL;
 		while (s[j] == c)
 			j++;

@@ -6,7 +6,7 @@
 #    By: jricafor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/25 12:22:33 by jricafor          #+#    #+#              #
-#    Updated: 2020/02/25 12:23:22 by jricafor         ###   ########.fr        #
+#    Updated: 2020/05/01 19:27:02 by jricafor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,9 +47,14 @@ SRCS	=	ft_memset.c \
 				ft_putendl_fd.c \
 				ft_putnbr_fd.c
 
+SRCS_B	=		ft_lstnew.c \
+					ft_lstadd_front.c
+
 HEADER	=	./
 
 OBJS	=	$(SRCS:.c=.o)
+
+OBJS_B	=	$(SRCS_B:.c=.o)
 
 CC 		=	gcc
 
@@ -66,6 +71,10 @@ $(NAME):	$(OBJS)
 			ar rc $(NAME) $(OBJS)
 			ranlib $(NAME)
 
+bonus:		$(OBJS_B)
+			ar rc $(NAME) $(OBJS_B)
+			ranlib $(NAME)
+
 clean:
 			$(RM) $(OBJS)
 
@@ -74,4 +83,4 @@ fclean:		clean
 
 re:			fclean all
 
-.PHONY:		all clean fclean re libft.a
+.PHONY:		all clean fclean re libft.a bonus
