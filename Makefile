@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jricafor <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/02/25 12:22:33 by jricafor          #+#    #+#              #
-#    Updated: 2020/05/01 22:59:32 by jricafor         ###   ########.fr        #
+#    Created: 2020/05/03 16:00:53 by jricafor          #+#    #+#              #
+#    Updated: 2020/05/03 16:11:23 by jricafor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,7 +83,7 @@ bonus:		$(OBJS_B)
 			ranlib $(NAME)
 
 clean:
-			$(RM) $(OBJS) $(BONUS_OBJS)
+			$(RM) $(OBJS) $(OBJS_B)
 
 fclean:		clean
 			$(RM) $(NAME)
