@@ -25,19 +25,13 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 	while (s1[i] != '\0' && i < len)
 	{
 		j = 0;
-		if (s1[i] != s2[j])
-			i++;
-		else
+		while (s1[i + j] == s2[j] && i + j < len)
 		{
-			while (s2[j] != '\0' && s1[i] == s2[j] && i < len)
-			{
-				i++;
-				j++;
-			}
-			if (s2[j] == '\0')
-				return ((char*)s1 + i - j);
-			i++;
+			if (s2[j + 1] == '\0')
+				return ((char *)s1 + i);
+			j++;
 		}
+		i++;
 	}
 	return (NULL);
 }
