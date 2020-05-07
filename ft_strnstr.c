@@ -18,6 +18,8 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 	unsigned int j;
 
 	i = 0;
+	if (!s1)
+		return (NULL);
 	if (s2[i] == 0)
 		return ((char*)s1);
 	while (s1[i] != '\0' && i < len)
@@ -37,5 +39,5 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 			i++;
 		}
 	}
-	return (0);
+	return (NULL);
 }
