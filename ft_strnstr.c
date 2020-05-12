@@ -6,7 +6,7 @@
 /*   By: jricafor <jricafor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/27 17:07:37 by jricafor          #+#    #+#             */
-/*   Updated: 2020/04/27 17:34:21 by jricafor         ###   ########.fr       */
+/*   Updated: 2020/05/12 12:25:11 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 	i = 0;
 	if (!s1)
 		return (NULL);
-	if (!s2)
+	if (!s2 || *s2 == '\0')
 		return ((char*)s1);
 	while (s1[i] != '\0' && i < len)
 	{
